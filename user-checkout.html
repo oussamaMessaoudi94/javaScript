@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pharmative &mdash; Colorlib Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="site-wrap">
+
+
+        <div class="site-navbar py-2">
+
+
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="logo">
+                        <div class="site-logo">
+                            <a href="admin-index.html" class="js-logo-clone"><strong
+                                    class="text-primary">Pharma</strong>tive</a>
+                        </div>
+                    </div>
+                    <div class="main-nav d-none d-lg-block">
+                        <nav class="site-navigation text-right text-md-center" role="navigation">
+                            <ul class="site-menu js-clone-nav d-none d-lg-block" id="headerMenu"
+                                style="margin-right: -120px;">
+                                <script>header();</script>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="icons">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="bg-light py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mb-0">
+                        <a href="admin-index.html">Home</a> <span class="mx-2 mb-0">/</span>
+                        <strong class="text-black">checkout</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 mb-5 mb-md-0">
+                  <h2 class="h3 mb-3 text-black">Billing Details</h2>
+                  <div class="p-3 p-lg-5 border">
+                    <div class="form-group">
+                      <label for="c_country" class="text-black">Country <span class="text-danger">*</span></label>
+                      <select id="country" class="form-control"  placeholder="Select a country">
+                        <option></option>
+                        <option value="Tunis">Tunis</option>
+                        <option value="3">Algeria</option>
+                        <option value="4">Afghanistan</option>
+                        <option value="5">Ghana</option>
+                        <option value="6">Albania</option>
+                        <option value="7">Bahrain</option>
+                        <option value="8">Colombia</option>
+                        <option value="9">Dominican Republic</option>
+                      </select>
+                    </div>
+                    <span id="countryError"></span>
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="fName" name="c_fname" placeholder="First Name">
+                        <span id="fNameError"></span>
+                      </div> 
+                      <div class="col-md-6">
+                        <label for="c_lname" class="text-black">Last Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="lName" name="c_lname" placeholder="Last Name">
+                        <span id="lNameError"></span>
+                      </div>
+                    </div>
+          
+        
+          
+                    <div class="form-group row">
+                      <div class="col-md-12">
+                        <label for="c_address" class="text-black">Address <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="address" name="address" placeholder="Street address">
+                        <span id="addressError"></span>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label for="c_state_country" class="text-black">State / Country <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="stateCountry" name="stateCountry">
+                        <span id="stateCountryError"></span>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="c_postal_zip" class="text-black">Posta / Zip <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="zip" name="c_postal_zip">
+                        <span id="zipError"></span>
+                      </div>
+                    </div>
+                    <div class="form-group row mb-5">
+                      <div class="col-md-6">
+                        <label for="c_email_address" class="text-black">Email Address <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="email" name="c_email_address">
+                        <span id="emailError"></span>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="c_phone" class="text-black">Phone <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="phone" name="c_phone" placeholder="Phone Number">
+                        <span id="phoneError"></span>
+                      </div>
+                    </div>
+          
+                    <div class="form-group">
+                      <label for="c_order_notes" class="text-black">Order Notes</label>
+                      <textarea name="c_order_notes" id="order" cols="30" rows="5" class="form-control"
+                        placeholder="Write your notes here..." ></textarea>
+                    </div>
+          
+                  </div>
+                </div>
+                <div class="col-md-6">
+          
+        
+          
+                  <div class="row mb-5">
+                    <div class="col-md-12">
+                      <h2 class="h3 mb-3 text-black">Your Order</h2>
+                      <div class="p-3 p-lg-5 border">
+                        <table class="table site-block-order-table mb-5">
+                          <thead>
+                            <th>Product</th>
+                            <th>Total</th>
+                          </thead>
+                          <tbody id="check">
+<script>adminCheckout()</script>
+
+
+
+                          </tbody>
+                          <tbody id="subtotalA">
+                            <script>adminCheckout()</script>
+                          </tbody>
+                        </table>
+          
+          
+                        <div class="form-group">
+                          <button class="btn btn-primary btn-lg btn-block" onclick="adminOrder()">Place
+                            Order</button>
+                        </div>
+          
+                      </div>
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+              <!-- </form> -->
+            </div>
+          </div>
+        <footer class="site-footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+
+                        <div class="block-7">
+                            <h3 class="footer-heading mb-4">About <strong class="text-primary">Pharmative</strong></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio
+                                voluptates
+                                sed dolorum excepturi iure eaque, aut unde.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="block-5 mb-5">
+                            <h3 class="footer-heading mb-4">Contact Info</h3>
+                            <ul class="list-unstyled">
+                                <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
+                                <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
+                                <li class="email">emailaddress@domain.com</li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="row pt-5 mt-5 text-center">
+                    <div class="col-md-12">
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template is made
+                            with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
